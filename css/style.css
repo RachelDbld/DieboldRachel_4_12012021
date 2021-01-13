@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+section{
+    width: 380px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+a{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    border: #F3976C solid 2px;
+    border-radius: 40px;
+    padding: 15px;
+}
+a:hover{
+    border: black;
+    background-color: #F3976C;
+
+}
