@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 	
@@ -31,22 +31,22 @@
 <div class="page-container">
     
 <!-- bloc-0 -->
+<!-- bloc-0 -->
 <div class="bloc bgc-white l-bloc " id="bloc-0">
 	<div class="container bloc-sm">
-		<nav class="navbar row">
+		<nav class="navbar">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="atlanta web design logo" height="40" /></a>
+				<img src="img/la-chouette-agence.png" alt="atlanta web design logo" height="40" />
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
+					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
 			</div>
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
 						<a href="index.html">Accueil</a>
+					</li>
+					<li>
 					</li>
 					<li>
 						<a href="page2.html">Contact</a>
@@ -61,17 +61,17 @@
 <!-- bloc-6 -->
 <div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
 	<div class="container bloc-lg">
-		<div class="row">
 			<div class="col-sm-12">
+				<div class="fond_rose">
 				<h1 class="text-center hero-bloc-text tc-white">
 					Parlons web design !
 				</h1>
-				<p class="text-center mg-lg tc-white tight-width-whitespace">
+				<h2 class="text-center mg-lg tc-white tight-width-whitespace">
 					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
-				</p>
+				</h2>
 			</div>
-		</div>
+			</div>
 	</div>
 </div>
 <!-- bloc-6 END -->
@@ -79,43 +79,37 @@
 <!-- bloc-7 -->
 <div class="bloc bgc-white l-bloc" id="bloc-7">
 	<div class="container bloc-lg">
-		<div class="row">
+
 			<div class="col-sm-6">
 				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					<div class="form-group">
-						<label>
+						<label for="name">
 							Nom
 						</label>
-						<input id="name" class="form-control" required />
+						<input id="name" class="form-control" required/>
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="email">
 							Adresse email
 						</label>
 						<input id="email" class="form-control" type="email" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="form-control">
 							Comment nous avez-vous connu ?
 						</label>
 						<input class="form-control" type="email" required id="input_504" />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="brief">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</label><textarea id="brief" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
 					</button>
 				</form>
 			</div>
-			<div class="col-sm-6">
-				<p>
-					contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
-				</p>
-			</div>
-		</div>
 	</div>
 </div>
 <!-- bloc-7 END -->
@@ -128,35 +122,33 @@
 <!-- Footer - bloc-8 -->
 <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
-		<div class="row">
 			<div class="col-sm-12">
-				<p class="text-center">
-					La chouette agence - Agence web basée à Lyon.<br>
-				</p>
-				<div class="row row-no-gutters social">
+					<div class="info_pratiques"><h2>contact@lachouetteagence.com</h2>
+					<h2>2 place Sathonay 69001 Lyon</h2>
+					<h2>Ouvert de 9h à 18h, du lundi au vendredi</h2></div>
+				<div class="row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.twitter.com"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="https://www.twitter.com" alt="lien vers Twitter"><span class="fa fa-twitter icon-md" aria-hidden="true"></span><br>Twitter</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.facebook.com"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="https://www.facebook.com" alt="lien vers Facebook"><span class="fa fa-facebook icon-md" aria-hidden="true"></span><br>Facebook</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.dribbble.com"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="https://www.dribbble.com" alt="lien vers dribbble"><span class="fa fa-dribbble icon-md" aria-hidden="true"></span><br>Dribbble</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.instagram.com"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="https://www.instagram.com" alt="lien vers Instagram"><span class="fa fa-instagram icon-md" aria-hidden="true"></span><br>Instagram</a>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 	</div>
 </div>
 <!-- Footer - bloc-8 END -->

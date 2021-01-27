@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -133,7 +133,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: #000;
 }
 
 .d-bloc .a-btn:hover,
@@ -150,7 +150,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, .7)
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -276,6 +276,8 @@ a:hover {
     max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
+    width: 250px;
+    height: 47px;
 }
 
 .navbar-brand img[src$=svg] {
@@ -305,6 +307,7 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+    font-weight: bold;
 }
 
 .navbar-toggle {
@@ -335,8 +338,51 @@ a:hover {
 /*ajout*/
 
 .row{
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(255, 255, 255, 0.6);
     padding: 20px;
+}
+
+.row--color{
+    background-color: #f3976c;
+    padding: 10px 0px 100px;
+}
+
+.info_pratiques{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.fond{
+    background-color: #F3976C;
+    padding: 20px;
+}
+
+.fond_rose{
+    background-color: #f3976c;
+    padding: 15px;
+    width: 100%;
+}
+
+.col-sm-12--logo{
+    height: 100%;
+    width: 100%;
+    background-color: #f3976c7a;
+    padding: 20px;
+}
+
+.col-sm-12{
+    height: 100%;
+    width: 100%;
+}
+
+.fa-twitter{
+    display: flex;
+    flex-direction: column;
+}
+
+.col-sm-6 > img{
+    width: 270px;
+    height:270px;
 }
 
 @media (min-width: 768px) {
@@ -413,7 +459,6 @@ nav .caret {
 }
 
 .mg-md {
-    margin-top: 10px;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
@@ -484,7 +529,7 @@ button {
 }
 
 .form-control {
-    border-color: rgba(0, 0, 0, .1);
+    border-color: #000;
     box-shadow: none;
 }
 
@@ -620,7 +665,7 @@ a[data-lightbox]:hover img {
 h1 {
     font-family: "helvetica";
     font-weight: 400;
-    color: #F3976C;
+    color: #000;
     font-size: 32px;
 }
 
@@ -635,19 +680,19 @@ h3 {
     font-family: "helvetica";
     font-weight: 700;
     color: #333333;
-    font-size: 15px;
+    font-size: 18px;
 }
 h4 {
     font-family: "helvetica";
     font-weight: 700;
     color: #ffff;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 p, label, .btn{
     font-family: "helvetica";
     font-weight: 400;
-    color: #333333;
+    color: #000;
     font-size: 16px;
 }
 
@@ -692,7 +737,7 @@ a{
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
+    color: #000;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -700,8 +745,14 @@ a{
 }
 
 .social {
-    max-width: 400px;
+    max-width: 600px;
     margin: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.social:hover{
+    color: rgba(255, 255, 255, .7);
 }
 
 .med-width-whitespace {
@@ -710,17 +761,9 @@ a{
     box-shadow: 0px 0px 0px #000000;
 }
 
-h4 {
-    color: #333333!important;
-}
-
 .icons {
     margin-bottom: 14px;
     margin-top: 50px;
-}
-
-.white {
-    color: #FFFFFF;
 }
 
 .portfolio-thumb {
@@ -737,7 +780,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: #f3976c;
     padding: 40px 40px 40px 40px;
 }
 
@@ -760,6 +803,10 @@ h4 {
 
 .tc-white {
     text-align: center;
+    color: #000;
+}
+
+.white{
     color: #000;
 }
 
@@ -807,6 +854,7 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.webp");
 }
+
 
 @media (max-width: 1024px) {
     .bloc {
@@ -870,6 +918,11 @@ h4 {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
+
+    .social{
+        display:flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 767px) {
@@ -885,8 +938,7 @@ h4 {
     h6,
     p,
     #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
+        padding:15px;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -911,7 +963,7 @@ h4 {
         border-bottom: 1px solid rgba(0, 0, 0, .1);
         background: rgba(0, 0, 0, .05);
         text-align: left;
-        padding-left: 15px;
+        padding-left: 20px;
         width: 100%;
         list-style-type: none;
     }
@@ -1010,6 +1062,12 @@ h4 {
         width: 180px;
         height: 320px;
     }
+
+    .social{
+        display:flex;
+        flex-direction: column;
+    }
+    
 }
 
 @media (max-width: 400px) {
@@ -1017,6 +1075,7 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+    
 }
 
 @media (max-width: 767px) {
